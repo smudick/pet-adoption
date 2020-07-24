@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: aqua;
+    background-color: white;
+}
+
+.pets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.pet {
+    margin: 2em;
+    text-align: center;
+}
+
+.pet img {
+    width: 350px;
+    height: 350px;
+}
+
+.pet-type {
+    text-transform: uppercase;
 }

@@ -67,3 +67,28 @@ const buildPetCards = () => {
 
 }
 buildPetCards();
+
+const dogButton = document.getElementById('dog-btn');
+const catButton = document.getElementById('cat-btn');
+const dinoButton = document.getElementById('dino-btn');
+const allButton = document.getElementById('all-btn');
+
+dogButton.addEventListener('click', function (event) {
+    //loop through all pets
+    //select all objects with type of pet === dog and display none
+    for (let i = 0; i < pets.length; i++) {
+        if (pets[i].typeOfPet !== "dog") {
+            pets[i].style.display = 'none';
+        }
+    }
+
+  });
+catButton.addEventListener('click', function (event) {
+    
+  });
+dinoButton.addEventListener('click', function (event) {
+    
+  });
+allButton.addEventListener('click', function (event) {
+    
+  });

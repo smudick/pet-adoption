@@ -55,7 +55,7 @@ const buildPetCards = () => {
     let domString = '';
 
     for (let j = 0; j < pets.length; j++) {
-        domString += `<div class="pet">`
+        domString += `<div class="pet" class="pet-${pets[j].typeOfPet}">`
         domString +=   `<div class="pet-name"><h2>${pets[j].name}</h2></div>`;
         domString +=   `<div class="pet-image"><img src=${pets[j].image} alt="Image of a ${pets[j].typeOfPet}"></div>`;
         domString +=   `<div class="pet-color"><h3>${pets[j].color}</h3></div>`;
@@ -73,22 +73,37 @@ const catButton = document.getElementById('cat-btn');
 const dinoButton = document.getElementById('dino-btn');
 const allButton = document.getElementById('all-btn');
 
+const getCats = document.getElementsByClassName('pet-cat');
+const getDogs = document.getElementsByClassName('pet-dog');
+const getDinos = document.getElementsByClassName('pet-dino');
+
 dogButton.addEventListener('click', function (event) {
     //loop through all pets
-    //select all objects with type of pet === dog and display none
+    //select all objects with type of pet !== dog and display none
     for (let i = 0; i < pets.length; i++) {
-        if (pets[i].typeOfPet !== "dog") {
-            pets[i].style.display = 'none';
-        }
+            getCats.style.display = 'none';
+            getDinos.style.display = 'none';
     }
+  });
 
-  });
 catButton.addEventListener('click', function (event) {
-    
+    for (let i = 0; i < pets.length; i++) {
+        getDogs.style.display = 'none';
+        getDinos.style.display = 'none';
+    }
   });
+
 dinoButton.addEventListener('click', function (event) {
-    
+    for (let i = 0; i < pets.length; i++) {
+        getDogs.style.display = 'none';
+        getCats.style.display = 'none';
+    }
   });
+
 allButton.addEventListener('click', function (event) {
-    
+    for (let i = 0; i < pets.length; i++) {
+        getCats.style.display = 'block';
+        getDogs.style.display = 'block';
+        getDinos.style.display = 'block';
+    }
   });

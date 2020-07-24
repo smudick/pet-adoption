@@ -24,3 +24,106 @@ body {
 .pet-type {
     text-transform: uppercase;
 }
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.cat-btn {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.cat-btn:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.cat-btn:active {
+	position:relative;
+	top:1px;
+}
+.dog-btn {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #ef3f33 5%, #d23c01 100%);
+	background-color:#ef4f33;
+	border-radius:6px;
+	border:1px solid #d03f05;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.dog-btn:hover {
+	background:linear-gradient(to bottom, #d23c01 5%, #ef5933 100%);
+	background-color:#d23201;
+}
+.dog-btn:active {
+	position:relative;
+	top:1px;
+}
+.dino-btn {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #59ef33 5%, #12d201 100%);
+	background-color:#43ef33;
+	border-radius:6px;
+	border:1px solid #16d005;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.dino-btn:hover {
+	background:linear-gradient(to bottom, #24d201 5%, #39ef33 100%);
+	background-color:#2bd201;
+}
+.dino-btn:active {
+	position:relative;
+	top:1px;
+}
+.all-btn {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, black 5%, black 100%);
+	background-color: black;
+	border-radius:6px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.all-btn:hover {
+	background:linear-gradient(to bottom, black 5%, black 100%);
+	background-color:black;
+}
+.all-btn:active {
+	position:relative;
+	top:1px;
+}
